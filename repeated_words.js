@@ -13,7 +13,7 @@ function calculate(evt) {
   var contents = '';
 
   if (f) {
-    var r = new FileReader();
+    var r = new FileReader();/* tras asignar salta al r.readAsTExt una vez leido sigue ejecutando por debajp*/
     r.onload = function(e) { 
       contents = e.target.result;
       var escaped  = escapeHtml(contents);

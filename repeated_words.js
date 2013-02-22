@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function generateOutput(contents) {
-  return contents.replace(/____________________/__,'__________________________________');
+  return contents.replace(/\b([a-z - A-z] \w*)(\S+)\|\b/ig,'$1 $2');
 }
 
 function calculate(evt) {

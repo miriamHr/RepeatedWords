@@ -40,6 +40,6 @@ var entityMap = {
 
 function escapeHtml(string) {
   return String(string).replace(/[&<>"'\/]/g,function (s) {
-    return entityMap[S];
+    return entityMap[s];
   });
 }
